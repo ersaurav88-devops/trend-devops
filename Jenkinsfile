@@ -35,11 +35,10 @@ pipeline {
             }
         }
     }
-}
 
-post {
+    post {
         success {
-            echo "Successfully built, pushed, and deployed $DOCKER_IMAGE to EKS!"
+            echo "Successfully built, pushed, and deployed ${DOCKER_IMAGE} to EKS!"
         }
         failure {
             echo "Build failed. Please check the Console Output."
