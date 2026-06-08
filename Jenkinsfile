@@ -7,13 +7,7 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/ersaurav88-devops/trend-devops.git'
-            }
-        }
-
-        stage('Build Docker Image') {
+                stage('Build Docker Image') {
             steps {
                 sh 'docker build -t $DOCKER_IMAGE .'
             }
