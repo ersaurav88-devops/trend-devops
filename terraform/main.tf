@@ -80,7 +80,7 @@ resource "aws_security_group" "jenkins_sg" {
 
 resource "aws_instance" "jenkins_server" {
   ami           = "ami-091138d0f0d41ff90"
-  instance_type = "t3.micro"
+  instance_type = "t3.small"
   key_name      = "us-east-1"
 
   subnet_id              = aws_subnet.subnet1.id
