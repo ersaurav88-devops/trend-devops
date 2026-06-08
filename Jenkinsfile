@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'kubectl apply -f k8s/deployment.yml'
                 sh 'kubectl apply -f k8s/service.yml'
-                sh 'kubectl rollout restart deployment/trend-store'
+                sh 'kubectl rollout restart deployment/trend-deployment'
             }
         }
     }
