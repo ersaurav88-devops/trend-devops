@@ -35,7 +35,7 @@ pipeline {
             echo "Successfully built, pushed, and deployed ${DOCKER_IMAGE} to EKS!"
         }
         failure {
-            echo "Build failed. Please check the Console Output."
+            echo "Build failed Try again. Please check the Console Output."
         }
     }
 }
